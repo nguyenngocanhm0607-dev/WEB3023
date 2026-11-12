@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Duepuntozero, sans-serif;
+}
+
+@font-face {
+    font-family: Duepuntozero;
+    src: url(./font/UTM\ Duepuntozero.ttf);
+}
+
+#main {
+    padding: 0 100px;
+}
+
+#main #header .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faacac;
+}
+
+#main #header .menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main #header .menu ul li {
+    list-style: none;
+}
+
+#main #header .menu ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 15px;
+    padding: 10px 10px;
+    display: block;
+    border-left: 1px solid #fff;
+}
+
+#main #header .menu ul li:nth-child(1) a {
+    color: red;
+}
+
+#main #header .search input {
+    padding: 5px 10px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+} 
+
+#main #header .search button {
+    background-color: #ccccc0;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#main #header .logo {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#main #header .banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#main #content h1 {
+    font-weight: 200;
+    padding: 20px 0 10px 0;
+}
+
+#main #content .products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 100px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#main #content .products .item {
+    width: 24%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#main #content .products .item img {
+    width: 100%;
+    display: block;
+}
+
+#main #content .products .item h2 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#main #content .products .item p.price {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#main #content .products .item p.price .sale-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #970505;
+    margin-right: 8px;
+}
+
+#main #content .products .item p.price .old-price {
+    font-size: 13px; 
+    color: #777;                  /* Màu của giá cũ (bạn có thể đổi thành mã màu khác nếu muốn) */
+    text-decoration: line-through; /* Thuộc tính tạo đường gạch ngang qua chữ */
+    font-weight: normal;
+}
+
+#main #footer {
+    background-color: #faacac;
+}
+
+#main #footer h1 {
+    font-size: 14px;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: normal;
+}
